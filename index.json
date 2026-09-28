@@ -13,12 +13,12 @@
     "version": "0.0.1",
     "dateFormat": "",
     "dateFormatLocale": "",
-    "pkgPath": "daoscroll.js",
+    "pkgPath": "novel/src/en/daoscroll.js",
     "sourceCodeLanguage": 1,
-    "sourceCodeUrl": "https://raw.githubusercontent.com/Game-Roblox-ops/daoscroll-repo/main/daoscroll.js",
+    "sourceCodeUrl": "https://raw.githubusercontent.com/Game-Roblox-ops/daoscroll-repo/main/javascript/novel/src/en/daoscroll.js",
     "appMinVerReq": "0.5.0",
-    "notes": "Selectors are guesses; adjust CFG in daoscroll.js."
-},
+    "notes": "Novels from DaoScroll."
+  },
   {
     "name": "WTR-Lab",
     "id": 482913059,
@@ -35,7 +35,7 @@
     "dateFormatLocale": "",
     "pkgPath": "novel/src/en/wtrlab.js",
     "sourceCodeLanguage": 1,
-    "sourceCodeUrl": "https://raw.githubusercontent.com/Game-Roblox-ops/daoscroll-repo/main/daoscroll.js",
+    "sourceCodeUrl": "https://raw.githubusercontent.com/Game-Roblox-ops/daoscroll-repo/main/javascript/novel/src/en/wtrlab.js",
     "appMinVerReq": "0.5.0",
     "notes": "Machine-translated novels from WTR-Lab."
   }
