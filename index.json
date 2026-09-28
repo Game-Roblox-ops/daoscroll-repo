@@ -1,0 +1,22 @@
+[
+  {
+    "name": "DaoScroll",
+    "id": 482913058,
+    "lang": "en",
+    "baseUrl": "https://daoscroll.com",
+    "apiUrl": "",
+    "iconUrl": "https://daoscroll.com/favicon.ico",
+    "typeSource": "single",
+    "itemType": 2,
+    "isNsfw": false,
+    "hasCloudflare": false,
+    "version": "0.0.1",
+    "dateFormat": "",
+    "dateFormatLocale": "",
+    "pkgPath": "novel/src/en/daoscroll.js",
+    "sourceCodeLanguage": 1,
+    "sourceCodeUrl": "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/javascript/novel/src/en/daoscroll.js",
+    "appMinVerReq": "0.5.0",
+    "notes": "Selectors are guesses; adjust CFG in daoscroll.js."
+  }
+]
