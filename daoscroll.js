@@ -1,3 +1,4 @@
+
 const mangayomiSources = [{
   "name": "DaoScroll",
   "lang": "en",
@@ -16,7 +17,7 @@ const CFG = {
   latestPath: "/latest?page={page}",           // latest updates listing
   searchPath: "/search?q={q}&page={page}",     // search results
   bookLinkContains: "/novel/",                 // substring in a novel's URL
-  chapterLinkContains: "/chapter",             // substring in a chapter's URL
+  chapterLinkContains: "/read/",               // chapter URLs look like /read/chapter-481/
   titleSel: "h1",
   descSel: "meta[property='og:description']",
   coverSel: "meta[property='og:image']",
@@ -99,7 +100,12 @@ class DefaultExtension extends MProvider {
     for (const a of doc.select(`a[href*='${CFG.chapterLinkContains}']`)) {
       const link = this.abs(a.attr("href").split("?")[0]);
       if (seen[link]) continue;
-      const chName = (a.attr("title") || a.text || "").trim();
+      let chName = (a.attr("title") || a.text || "").trim();
+      // strip leading "#485" and trailing date like "August 24, 2026"
+      chName = chName
+        .replace(/^#\d+\s*/, "")
+        .replace(/\s*(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+\d{4}\s*$/, "")
+        .trim();
       if (!chName) continue;
       seen[link] = true;
       chapters.push({ name: chName, url: link });
